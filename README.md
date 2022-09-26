@@ -1,83 +1,80 @@
-COSA E' GIT
-E' un software open source di version control che serve per salvare il codice, fare il backup delle versioni e condividere il codice
+COSA E' GIT<br>
+e' un software open source di version control che serve per salvare il codice, fare il backup delle versioni e condividere il codice<br>
 -----------------------------------------------------------------
 
-COME INSTALLARE GIT
-su git-scm.com, scaricare il file .exe e installarlo con le impostazioni in base alle mie esigenze
+COME INSTALLARE GIT<br>
+su git-scm.com, scaricare il file .exe e installarlo con le impostazioni in base alle mie esigenze<br>
 -----------------------------------------------------------------
 
-ESTENSIONI VSC
-git graph
-git history
-gitlens -> da utilizzare con gitkraken che è a pagamento e serve per gestire tutti i branch, respository e funzioni git direttamente da un software apposito
+ESTENSIONI VSC<br>
+git graph<br>
+git history<br>
+gitlens -> da utilizzare con gitkraken che è a pagamento e serve per gestire tutti i branch, respository e funzioni git direttamente da un software apposito<br>
 -----------------------------------------------------------------
 
-COME FUNZIONA GIT
-#workflow
-main <-- hotfix <-- release branch <-- dev <-- features branch
-
-main: lavoro finito che verrà messo online
-
-hotfixes: branch di test se non funziona qualcosa
-
-release branch: fase di rilascio dove viene caricato il lavoro finito in dev per poi essere caricato su main
-
-dev: fase di sviluppo
-
-features branch: dove vengono sviluppate delle piccole parti del dev per poi essere caricate sul dev
-
-#fork
-serve per clonare il repository di qualcun'altro sul proprio e vedere quante persone lo hanno fatto
+COME FUNZIONA GIT<br>
+#workflow<br>
+main <-- hotfix <-- release branch <-- dev <-- features branch<br>
+main: lavoro finito che verrà messo online<br>
+hotfixes: branch di test se non funziona qualcosa<br>
+release branch: fase di rilascio dove viene caricato il lavoro finito in dev per poi essere caricato su main<br>
+dev: fase di sviluppo<br>
+features branch: dove vengono sviluppate delle piccole parti del dev per poi essere caricate sul dev<br>
 -----------------------------------------------------------------
 
-FUNZIONI GIT
-#clonare un progetto
-    git clone https://github.com/[nome_utente]/[nome_progetto]
+FORK<br>
+serve per clonare il repository di qualcun'altro sul proprio e vedere quante persone lo hanno fatto<br>
+-----------------------------------------------------------------
 
-#creare un nuovo repository in locale
-    git init
-
-#creare un repository online
-    andare su git hub, selezionare nuovo repository, assegnare nome e impostazione
-
-#collegare ad un repository online
-    git remote add origin https://github.com/[nome_utente]/[nome_progetto]
-
-#pushare i file nel repository online dove mi sono collegato
-    git push origin [nome_branch]
-    mi manderà a video una pagina per acedere dove autorizzare
-    consiglio: per pushare main usare force
-        git push --force origin [nome_branch] 
-
-#vedere lo stato del branch dove sto lavorando
-    git status
-
-#tracciare le modifiche in uno specifico file
-    git add [nome_file]
-
-#tracciare le modifiche in tutti i file
-    git add .
-
-#salvare le modifiche tracciate
-    git commit -m "titolo"
-
-#vedere tutte le modifiche salvate
-    git log
-
-#resettare un add appena fatto
-    git reset
-
-#resettare il commit precedente
-    git reset HEAD~1
-
-#resettare un commit specifico
-    git reset [ash]
-
-#passare da un branch all'altro
-    git checkout [nome_branch]
-
-#caricare dev su main
-    passare al branch main
-        git checkout main
-    caricare dev su main
-        git merge dev
+FUNZIONI GIT<br>
+#clonare un progetto<br>
+git clone https://github.com/[nome_utente]/[nome_progetto]<br>
+<br>
+#creare un nuovo repository in locale<br>
+git init<br>
+<br>
+#creare un repository online<br>
+andare su git hub, selezionare nuovo repository, assegnare nome e impostazione<br>
+<br>
+#collegare ad un repository online<br>
+git remote add origin https://github.com/[nome_utente]/[nome_progetto]<br>
+<br>
+#pushare i file nel repository online dove mi sono collegato<br>
+git push origin [nome_branch]<br>
+mi manderà a video una pagina per acedere dove autorizzare<br>
+consiglio: per pushare main usare force<br>
+git push --force origin [nome_branch] <br>
+<br>
+#vedere lo stato del branch dove sto lavorando<br>
+git status<br>
+<br>
+#tracciare le modifiche in uno specifico file<br>
+git add [nome_file]<br>
+<br>
+#tracciare le modifiche in tutti i file<br>
+git add .<br>
+<br>
+#salvare le modifiche tracciate<br>
+git commit -m "titolo"<br>
+<br>
+#vedere tutte le modifiche salvate<br>
+git log<br>
+<br>
+#resettare un add appena fatto<br>
+git reset<br>
+<br>
+#resettare il commit precedente<br>
+git reset HEAD~1<br>
+<br>
+#resettare un commit specifico<br>
+git reset [ash]<br>
+<br>
+#passare da un branch all'altro<br>
+git checkout [nome_branch]<br>
+<br>
+#caricare dev su main<br>
+passare al branch main<br>
+git checkout main<br>
+caricare dev su main<br>
+git merge dev<br>
+<br>
