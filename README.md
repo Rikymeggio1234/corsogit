@@ -70,6 +70,7 @@ git reset HEAD~1<br>
 git reset [ash]<br>
 <br>
 #creare un nuovo branch<br>
+git checkout -b [nome_branch]<br>
 #passare da un branch all'altro<br>
 git checkout [nome_branch]<br>
 <br>
