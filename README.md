@@ -30,11 +30,11 @@ FUNZIONI GIT<br>
 #clonare un progetto<br>
 git clone https://github.com/[nome_utente]/[nome_progetto]<br>
 <br>
-#creare un nuovo repository in locale<br>
-git init<br>
-<br>
 #creare un repository online<br>
 andare su git hub, selezionare nuovo repository, assegnare nome e impostazione<br>
+<br>
+#creare un nuovo repository in locale<br>
+git init<br>
 <br>
 #collegare ad un repository online<br>
 git remote add origin https://github.com/[nome_utente]/[nome_progetto]<br>
@@ -48,11 +48,14 @@ git push --force origin [nome_branch] <br>
 #vedere lo stato del branch dove sto lavorando<br>
 git status<br>
 <br>
-#tracciare le modifiche in uno specifico file<br>
+#tracciare le modifiche di uno specifico file<br>
 git add [nome_file]<br>
 <br>
-#tracciare le modifiche in tutti i file<br>
+#tracciare le modifiche di tutti i file<br>
 git add .<br>
+<br>
+#resettare un add appena fatto<br>
+git reset<br>
 <br>
 #salvare le modifiche tracciate<br>
 git commit -m "titolo"<br>
@@ -60,21 +63,17 @@ git commit -m "titolo"<br>
 #vedere tutte le modifiche salvate<br>
 git log<br>
 <br>
-#resettare un add appena fatto<br>
-git reset<br>
-<br>
 #resettare il commit precedente<br>
 git reset HEAD~1<br>
 <br>
 #resettare un commit specifico<br>
 git reset [ash]<br>
 <br>
+#creare un nuovo branch<br>
 #passare da un branch all'altro<br>
 git checkout [nome_branch]<br>
 <br>
 #caricare dev su main<br>
-passare al branch main<br>
-git checkout main<br>
-caricare dev su main<br>
+passare al branch main prima di svolgere la funzione<br>
 git merge dev<br>
 <br>
